@@ -1,4 +1,4 @@
-name: iso_build
+name: Sun/OS Linux ISO - Git
 on:
   workflow_dispatch:
   #schedule:
@@ -44,9 +44,9 @@ jobs:
           edition: ${{ matrix.edition }}
           branch: ${{ matrix.branch }}
           scope: ${{ matrix.scope }}
-          version: ${{ steps.time.outputs.time }}-development
+          version: ${{ steps.time.outputs.time }}-git
           kernel: linux510
-          code-name: "Nightly"
+          code-name: "Community Build - Git"
           release-tag: ${{ needs.prepare-release.outputs.release_tag }}
       -
         name: rollback
