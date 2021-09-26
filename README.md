@@ -1,2 +1,2 @@
-# Sun/OS Linux 2021.11
+# Sun/OS Linux 2021.10
 Temporary ISO build for Sun/OS Linux (will be based on Arch for now)
