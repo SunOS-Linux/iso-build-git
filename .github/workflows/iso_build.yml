@@ -1,4 +1,4 @@
-name: iso_build
+name: Sun/OS Linux Build ISO
 on:
   workflow_dispatch:
   #schedule:
@@ -25,7 +25,7 @@ jobs:
     strategy:
       matrix:
         EDITION: [kde]
-        BRANCH: [stable]
+        BRANCH: [unstable]
         SCOPE: [full]
     steps:
       - 
